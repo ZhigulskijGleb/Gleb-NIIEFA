@@ -1,2 +1,4 @@
 https://getbootstrap.com/docs/5.2/components/modal/
 https://bootstrapshuffle.com/classes
+Для справок по  bootstrap
+https://bootstrap-4.ru/docs/5.0/components/buttons/#toggle-states

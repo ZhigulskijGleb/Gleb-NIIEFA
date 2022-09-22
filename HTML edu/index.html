@@ -11,7 +11,7 @@
     <!--Heading-->
     <title>My awesome page</title>
 
-    <!--Link with tamplates from Bootstrap-->
+    <!--Link with tamplates from Bootstrap bibl CSS-->
     <!--rel(relationships) - Отношение внешнего документа к нашему документу.
           Так как href содержит стили css, то указываем stylesheet -->
 
@@ -21,22 +21,71 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
     <style>
       .rounded_img {
-        width: 40%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-        margin-bottom: 6em;
+        border-radius: 100%;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); */
       }
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #1fbb11">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            class="rounded_img pb-3 mt-3"
+            src="tree.jpg"
+            alt="tree"
+            width="40"
+            padd
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- ul - создает списки -->
+          <ul class="navbar-nav">
+            <!-- li - элементы списка -->
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: white"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white">Саженцы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white">Рассада</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container text-center my-5">
       <div class="row">
         <!--В bottstrap все размеры разделены на 12. Соотввенно col-6 - половины ширины основного conrainer-->
         <!--lg - large (для компов), md - medium (для планшетов), sm - small (для телефонов)-->
 
         <div class="col-lg-6 col-md-8 mx-auto">
-          <img class="rounded_img" src="tree.jpg" alt="main tree" />
+          <!-- <img class="rounded_img" src="tree.jpg" alt="main tree" /> -->
           <h1 class="fw-light">You are always welcome</h1>
           <p class="lead text-muted">
             п. Дом отдыха "Чепца", ул. Садовая, д.2 (Вход со стороны ресторана
