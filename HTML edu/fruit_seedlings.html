@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--Heading-->
-    <title>My awesome page</title>
+    <title>Саженцы плодовых растений</title>
 
     <!--Link with tamplates from Bootstrap bibl CSS-->
     <!--rel(relationships) - Отношение внешнего документа к нашему документу.
@@ -27,17 +27,13 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      .rounded_img {
-        border-radius: 100%;
-        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); */
-      }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #1fbb11">
+    <nav class="navbar navbar-expand-lg" width="4%" style="background-color: #1fbb11">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="tree2.png" alt="tree" width="40" padd />
+          <img src="tree2.png" alt="tree" width="70" padd />
         </a>
         <button
           class="navbar-toggler"
@@ -58,13 +54,36 @@
               <a
                 class="nav-link"
                 aria-current="page"
-                href="#"
+                href="main.html"
                 style="color: white"
                 >Главная</a
               >
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#" style="color: white">Саженцы</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: white"
+              >
+                Саженцы деревьев
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="fruit_seedlings.html"
+                    style="color: #1fbb11"
+                    >Плодовые</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="decor_seedlings.html" style="color: #1fbb11"
+                    >Декоративные</a
+                  >
+                </li>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#" style="color: white">Рассада</a>
@@ -73,26 +92,27 @@
         </div>
       </div>
     </nav>
-    <div class="container text-center my-5">
-      <div class="row">
-        <!--В bottstrap все размеры разделены на 12. Соотввенно col-6 - половины ширины основного conrainer-->
-        <!--lg - large (для компов), md - medium (для планшетов), sm - small (для телефонов)-->
-
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <!-- <img class="rounded_img" src="tree.jpg" alt="main tree" /> -->
-          <h1 class="fw-light">You are always welcome</h1>
-          <p class="lead text-muted">
-            п. Дом отдыха "Чепца", ул. Садовая, д.2 (Вход со стороны ресторана
-            "Армения")
-          </p>
-          <a
-            href="https://yandex.ru/search/?text=%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81&clid=2411726&lr=2"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            Like!
-          </a>
+    <!-- Карточки с продуктами -->
+    <div class="container my-2">
+      <div class="row row-cols-md-2 row-cols-sm-1">
+        <div class="col">
+          <div class="card">
+            <div class="row">
+              <div class="col-3">
+                <img src="pct\Абрикос Триумф севера.jpg" class="card-img-top" alt="Абрикос 'Триумф Севера'">
+              </div>
+              <div class="col">
+                <div class="card-body">
+                      <h5 class="card-title">Абрикос "Триумф севера"</h5>
+                      <p class="card-text">самоплодный, опылители для него не требуются, сорт отлично плодоносит при одиночных посадках.
+                          Дерево  высотой до 4 м  Вес плода может быть 35-40 г.Зрелые плоды желто-розовой окраски с толстоватой бархатистой кожицей
+                          и небольшим пушком. Мякоть сочная, прекрасно отстает от косточки. Сладкий вкус сочетается
+                        с кислинкой, которую ему придает кожица. Сорт Триумф севера способен выдерживать довольно низкие температуры.</p>
+                </div>
+            </div>
+            </div>
         </div>
+      </div>
       </div>
     </div>
   </body>
