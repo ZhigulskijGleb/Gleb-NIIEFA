@@ -1,0 +1,10 @@
+.my-info-block {
+  background-color: aquamarine;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: end;
+}
+.center {
+  text-align: center;
+}
