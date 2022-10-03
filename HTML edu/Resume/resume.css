@@ -30,29 +30,38 @@
   right: 0;
   bottom: 0;
 }
+
 hr {
-  width: 800px;
   margin: 30px auto;
+  margin-bottom: 50px;
+  width: 50vw;
   border: 0 none;
   background-color: mediumpurple;
   height: 3px;
-  border-radius: 1px;
 }
-.main-text-block {
+
+section {
   display: flex;
-  max-width: 1000px;
-  margin: 30px auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 100px;
 }
-.second-text-block-l {
-  max-width: 400px;
-  box-sizing: border-box;
+
+section div {
+  flex: 1 200px;
+}
+
+section div:nth-of-type(1) {
   border-right: 3px solid black;
-  padding: 0 50px;
+  padding-right: 30px;
 }
-.second-text-block-l h4,
+section div:nth-of-type(2) {
+  padding-left: 30px;
+}
+section div h4,
 p {
   padding-bottom: 5px;
 }
-.second-text-block-l p {
+section div p {
   font-family: "Merriweather", serif;
 }
