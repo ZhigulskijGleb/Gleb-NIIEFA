@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 .top-box {
+  display: block;
   background-color: aquamarine;
-  max-width: 1500px;
+  max-width: 1300px;
   margin: auto;
-  margin-bottom: 200px;
+  margin-bottom: 90px;
   padding: 40px 20px;
 }
 .my-contact {
@@ -27,4 +29,30 @@
   left: 0;
   right: 0;
   bottom: 0;
+}
+hr {
+  width: 800px;
+  margin: 30px auto;
+  border: 0 none;
+  background-color: mediumpurple;
+  height: 3px;
+  border-radius: 1px;
+}
+.main-text-block {
+  display: flex;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+.second-text-block-l {
+  max-width: 400px;
+  box-sizing: border-box;
+  border-right: 3px solid black;
+  padding: 0 50px;
+}
+.second-text-block-l h4,
+p {
+  padding-bottom: 5px;
+}
+.second-text-block-l p {
+  font-family: "Merriweather", serif;
 }
