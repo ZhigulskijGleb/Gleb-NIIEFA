@@ -1,67 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;900&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
-.top-box {
-  display: block;
-  background-color: aquamarine;
-  max-width: 1300px;
-  margin: auto;
-  margin-bottom: 90px;
-  padding: 40px 20px;
+body {
+  height: 100%;
+  font-size: 1.0625rem;
+  font-family: "Merriweather", seri f;
 }
-.my-contact {
-  text-align: end;
+.wrapper {
+  min-width: 90rem;
+  overflow: hidden;
 }
-.text-center {
-  text-align: center;
-}
-.raunded-photo {
-  display: block;
-  margin: 0 auto;
-  border: 4px solid cornflowerblue;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 95px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-hr {
-  margin: 30px auto;
-  margin-bottom: 50px;
-  width: 50vw;
-  border: 0 none;
-  background-color: mediumpurple;
-  height: 3px;
-}
-
-section {
+.header {
+  height: 17.625rem;
+  background-color: #d9d9d9;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 0 100px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-section div {
-  flex: 1 200px;
+h4 {
+  margin-right: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 
-section div:nth-of-type(1) {
-  border-right: 3px solid black;
-  padding-right: 30px;
+.bold {
+  font-weight: 700;
 }
-section div:nth-of-type(2) {
-  padding-left: 30px;
-}
-section div h4,
-p {
-  padding-bottom: 5px;
-}
-section div p {
-  font-family: "Merriweather", serif;
+
+.rounded-image {
+  position: absolute;
+  width: 13.75rem;
+  height: 13.75rem;
+  left: calc(50% - 13.75rem / 2);
+  top: 10.75rem;
+  border: 0.5rem solid #d9d9d9;
+  border-radius: 50%;
+  background: image();
 }
