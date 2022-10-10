@@ -11,6 +11,7 @@
     <!--Heading-->
     <title>Саженцы плодовых растений</title>
 
+    <link rel="stylesheet" href="style.css"/>
     <!--Link with tamplates from Bootstrap bibl CSS-->
     <!--rel(relationships) - Отношение внешнего документа к нашему документу.
           Так как href содержит стили css, то указываем stylesheet -->
@@ -28,17 +29,19 @@
     ></script>
     <style>
       .card {
-        border-radius: 1em;
-        border-color: #1fbb11;
-      }
-      .card:hover {
-        background-color: #1fbb1186;
-        border-color: #1fbb11;
-      }
-      .card img {
-        border-top-right-radius: 1em;
-        border-top-left-radius: 1em;
-      }
+  border-radius: 1em;
+  border-color: #1fbb11;
+  --bs-card-height: 100%;
+}
+
+.card:hover {
+  background-color: #1fbb1186;
+  border-color: #1fbb11;
+}
+.card img {
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
     </style>
   </head>
   <body>
@@ -97,10 +100,10 @@
                   >
                 </li>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#" style="color: white">Рассада</a>
-            </li>
           </ul>
+          <li class="nav-item active">
+            <a class="nav-link" href="berries.html" style="color: white">Ягоды</a>
+          </li>
         </div>
       </div>
     </nav>
@@ -109,7 +112,7 @@
     <div class="container my-2">
       <div class="row row-cols-md-3 row-cols-1 gy-4">
         <div class="col">
-          <div class="card">
+          <div class="card" style="--bs-card-height: 100%;">
             <img src="pct\Абрикос Триумф севера1.jpg" class="card-img-top" alt="Абрикос 'Триумф Севера'">
             <div class="card-body">
                   <h5 class="card-title">Абрикос "Триумф севера"</h5>

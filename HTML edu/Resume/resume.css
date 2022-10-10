@@ -1,9 +1,18 @@
+@media (min-width: 1330px) {
+  .left {
+    border-right: 6px solid #d9d9d9;
+    padding-right: 83px;
+  }
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   min-height: 1680px;
   font-size: 1.0625rem;
@@ -92,11 +101,12 @@ h2 {
 
 .main-info-block {
   flex-wrap: wrap;
-  margin: 0 13.125rem;
+  margin: 0 14.583%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   column-gap: 83px;
+  /* column-width: 29.514%; */
 }
 
 .vertical-line {
@@ -111,9 +121,4 @@ h2 {
   display: flex;
   flex-direction: column;
   row-gap: 0.75rem;
-}
-
-.left {
-  padding-right: 83px;
-  border-right: 6px solid #d9d9d9;
 }
