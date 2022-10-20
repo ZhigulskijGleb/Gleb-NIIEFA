@@ -4,33 +4,29 @@ from math import factorial
 
 string = 'abcd'
 def permutations(string):
-    memory_list = [string]
     memory_set = {string}
     memory_list_for = [string]
     i = 0
 
     def enumeration(count_i, member):
-        nonlocal memory_set, memory_list_for, memory_list
         count_1 = 0
-        memory_list = []
         work_list = list(member)
         while count_1 < len(member) - count_i:
             work_list.append(work_list.pop(count_i)) 
             memory_list.append(''.join(work_list))
             print('\nmemory_list', memory_list, '\nwork_list', work_list, '\n')
             count_1 += 1
-        memory_set = memory_set.union(set(memory_list))
-        memory_list_for = deepcopy(memory_list)
 
-
-        
     def pre_enumeration(memory_list):
-        nonlocal i
+        nonlocal i, memory_set, memory_list_for
         print('Что перебираем', memory_list_for)
         for perm_member in memory_list_for:
             print('Элементы перебора', perm_member)
             enumeration(i, perm_member)
-            print('finish enumeration of one member\ni', i, '\nmemory_list', memory_list, '\nmemory_set', memory_set)
+            print('finish enumeration of one member\ni', i, '\nmemory_list', memory_list)
+        memory_set = memory_set.union(set(memory_list))
+        memory_list_for = deepcopy(memory_list)
+        print('\nmemory_set', memory_set)
         i += 1
 
     def is_repeat():
@@ -41,11 +37,12 @@ def permutations(string):
         return int(factorial(len(string)) / d)
 
     number_perm = is_repeat()
-    k = 0
-    while k < 3:
-    # while len(memory_set) < number_perm:
+    # k = 0
+    # while k < 3:
+    while len(memory_set) < number_perm:
+        memory_list = []
         pre_enumeration(memory_list)
-        k += 1
+        # k += 1
 
     return print(memory_set)
 
