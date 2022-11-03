@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<!--Инструкция для веб-браузера, что этот файл- html-->
+<html lang="en">
+  <head>
+  <!--code for chars-->
+  <meta charset="UTF-8" />
+
+  <!--content="width=device-width - full scring width text-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Heading-->
+  <title>berries</title>
+
+  <!--Link with tamplates from Bootstrap bibl CSS-->
+  <!--rel(relationships) - Отношение внешнего документа к нашему документу.
+          Так как href содержит стили css, то указываем stylesheet -->
+
+  <link
+    href="/your-path-to-uicons/css/uicons-[your-style].css"
+    rel="stylesheet"
+  />
+  <!--load all styles -->
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"
+  ></script>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #1fbb11; padding-left: 10.323%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="tree2.png" alt="tree" width="70" padd />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- ul - создает списки -->
+        <ul class="navbar-nav">
+          <!-- li - элементы списка -->
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="main_1.html"
+              style="color: white"
+              >Главная</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="color: white"
+            >
+              Саженцы деревьев
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="fruit_seedling_1.html"
+                  style="color: #1fbb11"
+                  >Плодовые</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="decor_seedling_1.html" style="color: #1fbb11"
+                  >Декоративные</a
+                >
+              </li>
+          </li>
+        </ul>
+        <li class="nav-item active">
+          <a class="nav-link" aria-current="page" href="berries_1.html" style="color: white">Ягоды</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+    <div class="container my-2">
+      <div class="row row-cols-md-3 row-cols-1 gy-4">
+        <div class="col">
+          <div class="card" style="--bs-card-height: 100%">
+            <img
+              src="pct\Голубика Бригитта Блю.jpg"
+              class="card-img-top"
+              alt="Голубика 'Бригитта Блю'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Голубика "Бригитта Блю"</h5>
+              <p class="card-text">
+                Куст высотой 1,8 - 2 м. Сорт самоплодный. Плоды гладкие,
+                светло-голубого оттенка с легким восковым налетом. Ягоды
+                обладают кисло-сладким привкусом, сочной мякотью и плотной
+                кожицей. Сорт обладает высоким иммунитетом и практически не
+                болеет.
+              </p>
+              <button
+                class="btn btn-primary"
+                id="btnCare"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#CareBlue"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Посадка и уход
+              </button>
+              <p class="collapse" id="CareBlue">
+                Ширина посадочной ямы – 80 см, а глубина – 40 см. Голубика
+                предпочитает легкие, немного закисленные почвы. Желательно
+                использовать смесь торфа, опилок, хвойных иголок, так как она
+                дает кислую среду. При поверхностном залегании почвенных вод
+                рекомендуется размещать кустарник на гребнях, сооружая холмики.
+                После посадки обязательно мульчируют приствольный круг,
+                используя опилки, кору, щепу или хвойный опад. Голубика не
+                выносит как засухи, так и застоя влажности. Чтобы сорт
+                плодоносил хорошо, рядом высаживают опылители (другие сорта
+                голубики). Ягода из-за крупных размеров требует более
+                сбалансированного питания и обрезки, чтобы куст не перегружался,
+                иначе ягоды мельчают долго не набирают сахар и остаются кислыми.
+                Голубику лучше укрыть на зиму. Укрытие проводят осенью при
+                достижении ночной температуры минус 10 градусов. Побеги голубики
+                прижимают к земле, фиксируют специальными скобами, укрывают
+                имеющейся защитной материей или лапником. Снимают укрытие в
+                период весеннего таяния снега.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Голубика Бонус.jpg"
+              class="card-img-top"
+              alt="Голубика Бонус"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Голубика "Бонус"</h5>
+              <p class="card-text">
+                .Высота кустарника - 1,5 м. Ягоды– 1,7-2,5 гр. Одна тугая кисть
+                содержит до 10 плодов светло-голубого или синего оттенка с
+                беловатым налетом. На плотной кожице расположен рубчик,
+                зеленоватая мякоть приятна на вкус. Сорт самоплодный. Обычно у
+                голубики потемнение плодов служит свидетельством о созревании
+                плодов. Но у Бонуса ягоды после изменения цвета должны недели
+                две повисеть на кусте, чтобы набрать сахара.
+              </p>
+              <button
+                class="btn btn-primary"
+                id="btnCare"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#CareBonus"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Посадка и уход
+              </button>
+              <p class="collapse" id="CareBonus">
+                Ширина посадочной ямы – 80 см, а глубина – 40 см. Голубика
+                предпочитает легкие, немного закисленные почвы. Желательно
+                использовать смесь торфа, опилок, хвойных иголок, так как она
+                дает кислую среду. При поверхностном залегании почвенных вод
+                рекомендуется размещать кустарник на гребнях, сооружая холмики.
+                После посадки обязательно мульчируют приствольный круг,
+                используя опилки, кору, щепу или хвойный опад. Голубика не
+                выносит как засухи, так и застоя влажности. Чтобы сорт
+                плодоносил хорошо, рядом высаживают опылители (другие сорта
+                голубики). Ягода из-за крупных размеров требует более
+                сбалансированного питания и обрезки, чтобы куст не перегружался,
+                иначе ягоды мельчают долго не набирают сахар и остаются кислыми.
+                Голубику лучше укрыть на зиму. Укрытие проводят осенью при
+                достижении ночной температуры минус 10 градусов. Побеги голубики
+                прижимают к земле, фиксируют специальными скобами, укрывают
+                имеющейся защитной материей или лапником. Снимают укрытие в
+                период весеннего таяния снега.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="pct\Йошта.jpg" class="card-img-top" alt="Йошта" />
+            <div class="card-body">
+              <h5 class="card-title">Йошта</h5>
+              <p class="card-text">
+                Йошта – гибрид смородины и крыжовника. У йошты – плотные и
+                высокие кусты с широкой кроной, именно это позволяет
+                использовать растение для создания живых изгородей. Плоды имеют
+                довольно приятный аромат, отдаленно напоминающий о смородине,
+                внутри – мелкие семечки. Обладает йошта и устойчивостью к
+                засухе, не поражается почковым клещом и махровостью. Средний вес
+                ягодки 3 г. Из плодов этой культуры готовят варенье, делают сок,
+                варят компоты, джемы, повидла и желе. Помимо заморозки плоды
+                йошты можно и сушить, они сохраняют форму благодаря плотной
+                кожице, она же способствует и сохранению большинства полезных
+                веществ в плодах после сушки. Отвар из сушеных ягод лучше
+                потреблять зимой, он сможет поддержать организм, обогатив его
+                витаминами, тем самым, повысив иммунитет, и защитит от зимних
+                простуд.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Калина обыкновенная Красная гроздь.jpg"
+              class="card-img-top"
+              alt="Калины обычкновенная 'Красная гроздь'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Калины обыкновенная "Красная гроздь"</h5>
+              <p class="card-text">
+                Куст среднерослый, относительно раскидистый. Кисть крупная,
+                плотная. Ягоды массой более 0.7–0.9 г., округлой формы, не
+                осыпаются. Кожица ярко-красная. Вкус кисло- сладкий, почти без
+                горечи.  Сорт самоплодный. Куст обладает высокой зимостойкостью.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Жимолость Амфора.jpg"
+              class="card-img-top"
+              alt="Жимолость 'Амфора'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Жимолость "Амфора"</h5>
+              <p class="card-text">
+                Куст сорта Амфора с округлой густой кроной вырастает до 1,5
+                м., у ягод гармоничный десертный вкус .Плоды длиной 2 см, весом
+                до 1,5 г. Ягоды с куста не осыпаются.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Жимолость Морена.jpg"
+              class="card-img-top"
+              alt="Жимолость 'Морена'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Жимолость "Морена"</h5>
+              <p class="card-text">
+                Куст Морены овальный, в высоту может вырасти на 1,7 м. Вкус ягод
+                кисло-сладкий, без горечи, мякоть нежная, вес ягоды составляет
+                1,0-1,2 г. Ягоды с куста не осыпаются.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Жимолость Волхова.jpg"
+              class="card-img-top"
+              alt="Жимолость'Волхова'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Жимолость "Волхова"</h5>
+              <p class="card-text">
+                Жимолость Волхова вырастает до 2 м Плоды голубовато-сизые,
+                вытянутые в длину до 2 см. Масса одной жимолости – примерно 1
+                г. Ягоды сладкие, кислота почти не ощущается.  хорошо держатся
+                на кустах.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Жимолость Нимфа.jpg"
+              class="card-img-top"
+              alt="Жимолость'Нимфа'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Жимолость "Нимфа"</h5>
+              <p class="card-text">
+                Кусты среднерослые, слабораскидистые до 2 м высотой. Крона у
+                жимолости сорта Нимфа округлая, средней густоты.  Плоды весят в
+                среднем около 1,1 г. имеют гармоничный десертный вкус.
+                Осыпаемость ягод низкая.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Жимолость Ленинградский великан.jpg"
+              class="card-img-top"
+              alt="Жимолость 'Ленинградский великан'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Жимолость "Ленинградский великан"</h5>
+              <p class="card-text">
+                Достигает высоты в 1,5-2,5 м, в диаметре разрастается до 1,6 м.
+                Ягоды у жимолости Ленинградский великан массой 1-4 г не склонны
+                к осыпанию. Кисло-сладкие ягоды не горчат, имеют очень приятный
+                вкус.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Жимолость Избранница.jpg"
+              class="card-img-top"
+              alt="Жимолость 'Избранница'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Жимолость "Избранница"</h5>
+              <p class="card-text">
+                Растет Избранница в форме невысокого рыхлого кустарника до 1,2
+                м. Ягоды массой – 1,2 г. длина – 2 см, с выраженным
+                кисло-сладким вкусом и насыщенным приятным ароматом. Ягоды с
+                куста не осыпаются.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Облепиха Подарок саду.jpg"
+              class="card-img-top"
+              alt="Облепиха 'Подарок саду'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Облепиха "Подарок саду"</h5>
+              <p class="card-text">
+                Растение среднерослое, компактное. Побеги имеют только
+                верхушечные колючки. Плоды крупные, массой 0.82–1 г., удлиненно-
+                округлой формы, оранжевые, с красным пятном у основания. Кожица
+                плотная, толстая, отрыв ягод сухой. Мякоть нежная, кислого вкуса
+                со слабым ароматом. Созревают плоды в конце августа. Сорт
+                обладает высокой морозоустойчивостью. Облепиха &#39;Подарок
+                саду&#39; устойчива к вредителям и болезням.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Облепиха Елизавета.jpg"
+              class="card-img-top"
+              alt="Облепиха 'Елизавета'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Облепиха "Елизавета"</h5>
+              <p class="card-text">
+                Ягоды длиной около 1- 1,2 см вытянутой формы, напоминают
+                цилиндр. В среднем вес одного плода облепихи составляет около 1
+                г. Мякоть — плотная и сочная. Каждая ягодка имеет довольно
+                длинную плодоножку (5–6 мм), что позволяет легко отделять ее от
+                соплодия, не нарушая целостности. Плоды созревают ближе к концу
+                августа. Сорт неприхотлив в уходе, обладает высокими
+                показателями урожайности и устойчивостью к низким температурам.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Смородина белая Уральская белая.jpg"
+              class="card-img-top"
+              alt="Смородина белая 'Уральская белая'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Смородина белая "Уральская белая"</h5>
+              <p class="card-text">
+                Сорт среднераннего срока созревания. Ягоды размером (0,6-1,1 г),
+                одномерные, округлые, количество семян среднее, вкус
+                кисло-сладкий, оценка 5 баллов. Ягоды универсального назначения.
+                Достоинства сорта: высокая зимостойкость, урожайность, десертный
+                вкус ягод, устойчивость к мучнистой росе.  Самоплодный, слабо
+                поражается антракнозом.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Смородина красная Джонкер.jpg"
+              class="card-img-top"
+              alt="Смородина красная 'Джонкер'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Смородина красная "Джонкер"</h5>
+              <p class="card-text">
+                Куст сильнорослый, прямостоячий, густой. Ягоды крупные от 0,7 г
+                до 1,г, округлые ярко-красные, с плотной кожицей, содержат 4-5
+                крупных семян, приятного вкуса, пригодны для употребления в
+                свежем виде и для переработки.  Сорт
+                урожайный, скороплодный, самоплодность средняя, отличается
+                высокой зимостойкостью. Устойчивый к мучнистой росе, слабо
+                поражается антракнозом, средне почковым клещом.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Смородина красная Натали.jpg"
+              class="card-img-top"
+              alt="Смородина красная 'Натали'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Смородина красная "Натали"</h5>
+              <p class="card-text">
+                Смородина Натали – среднеспелый сорт, приносящий вкусные красные
+                ягоды. Ягоды крупные (средняя масса 0,7 г, максимальная 1,0 г),
+                отрыв сухой. Семена некрупные. Вкус кисло-сладкий.
+                Ягоды универсального назначения.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Смородина красная Сахарная.jpg"
+              class="card-img-top"
+              alt="Смородина красная 'Сахарная'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Смородина красная "Сахарная"</h5>
+              <p class="card-text">
+                Ягоды у сорта «Сахарная» красные, сочные, ароматные, с кисло-
+                сладким вкусом. Кусты средней высоты с пряморастущими ветвями.
+                Плоды размером 0,8г. У «Сахарной» высокая зимостойкость.
+                Самоопыляемость среднего уровня. Чтобы достигнуть приличной
+                урожайности, нужно высаживать рядом сорта-опылители.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Смородина Черная.jpg"
+              class="card-img-top"
+              alt="Смородина 'Черная'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Смородина черная</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Крыжовник Колобок.jpg"
+              class="card-img-top"
+              alt="Крыжовник 'Колобок'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Крыжовник "Колобок"</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Крыжовник Командор.jpg"
+              class="card-img-top"
+              alt="Крыжовник 'Командор'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Крыжовник "Командор"</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Крыжовник Родник.jpg"
+              class="card-img-top"
+              alt="Крыжовник 'Родник'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Крыжовник "Родник"</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Крыжовник Садко.jpg"
+              class="card-img-top"
+              alt="Крыжовник 'Садко'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Крыжовник "Садко"</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Виктория Корона.jpg"
+              class="card-img-top"
+              alt="Виктория 'Корона'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Виктория "Корона"</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Виктория Золушка.jpg"
+              class="card-img-top"
+              alt="Виктория 'Золушка'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Виктория "Золушка"</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Виктория Фестивальная.jpg"
+              class="card-img-top"
+              alt="Виктория 'Фестивальная'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Виктория "Фестивальная"</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Виктория Гигантелла.jpg"
+              class="card-img-top"
+              alt="Виктория 'Гигантелла'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Виктория "Гигантелла"</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Крыжовник Садко.jpg"
+              class="card-img-top"
+              alt="Крыжовник 'Садко'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Крыжовник "Садко"</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="pct\Крыжовник Садко.jpg"
+              class="card-img-top"
+              alt="Крыжовник 'Садко'"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Крыжовник "Садко"</h5>
+              <p class="card-text">НУЖНО ОПИСАНИЕ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+  <p class="">Контакты</p>
+  <p class=""><span class="fi-rr-user"></span>Жигульская Наталья Сергеевна</p>
+  <p class=""><span class="fi fi-rr-Phone-call"></span>+7 (919) 904-74-90</p>
+  <p class=""><span class="fi fi-rr-envelope"></span>zhigulskij.gv@gmail.com</p>
+</footer>
+  </body>
+</html>
